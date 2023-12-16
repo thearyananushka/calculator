@@ -1,0 +1,37 @@
+ /* Basic styles for calculator layout and appearance */
+ body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eb2f58;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 200px;
+    gap: 10px;
+}
+
+#display {
+    grid-column: span 4;
+    height: 50px;
+    background-color: rgb(83, 236, 241);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-size: 24px;
+    border:2px solid black;
+}
+
+button {
+    height: 50px;
+    font-size: 24px;
+    background-color:  rgb(83, 236, 241);
+    border:2px solid black;
+}
